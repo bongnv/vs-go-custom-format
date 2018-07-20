@@ -11,16 +11,41 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.sayHello"
+        "onLanguage:go"
     ],
     "main": "./out/extension",
     "contributes": {
         "commands": [
             {
-                "command": "extension.sayHello",
-                "title": "Hello World"
+                "command": "extension.goCustomFormat",
+                "title": "Run custom format"
             }
-        ]
+        ],
+        "configuration": {
+            "type": "object",
+            "title": "GoCustomFormat",
+            "properties": {
+                "goCustomFormat.onSave": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Run when saving documents."
+                },
+                "goCustomFormat.fmtCmds": {
+                    "type": "array",
+                    "default": [],
+                    "description": "Custom format commands.",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "menus": {
+            "commandPalette": [{
+                "command": "extension.goCustomFormat",
+                "when": "editorLangId==go"
+            }]
+        }
     },
     "scripts": {
         "vscode:prepublish": "npm run compile",
