@@ -4,10 +4,12 @@
     "description": "Provide custom format for Go codes",
     "version": "0.0.1",
     "publisher": "bongnv",
+    "repository": "https://github.com/bongnv/vs-go-custom-format",
     "engines": {
         "vscode": "^1.25.0"
     },
     "categories": [
+        "Formatters",
         "Other"
     ],
     "activationEvents": [
