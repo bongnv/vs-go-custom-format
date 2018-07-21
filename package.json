@@ -2,7 +2,7 @@
     "name": "go-custom-format",
     "displayName": "Go Custom Format",
     "description": "Provide custom format for Go codes",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "publisher": "bongnv",
     "repository": "https://github.com/bongnv/vs-go-custom-format",
     "engines": {
