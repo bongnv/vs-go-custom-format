@@ -4,7 +4,8 @@ The extension provides a functionality to run a custom format for Go codes.
 
 ## Requirements
 
-- The extension doesn't come with any formatter. A format tool needs to be installed and configured to make it work.
+- Make sure you have [VSCode](https://code.visualstudio.com/) and install [Go Custom Format](https://marketplace.visualstudio.com/items?itemName=bongnv.go-custom-format) from VSCode Marketplace.
+- The extension doesn't come with any formatter. A format tool needs to be installed and configured in `goCustomFormat.fmtCmds` to make it work.
 
 ## Extension Settings
 
