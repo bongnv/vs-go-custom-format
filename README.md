@@ -4,14 +4,14 @@ The extension provides a functionality to run a custom format for Go codes.
 
 ## Requirements
 
-_TODO_
+- The extension doesn't come with any formatter. A format tool needs to be installed and configured to make it work.
 
 ## Extension Settings
 
 This extension contributes the following settings:
 
 * `goCustomFormat.onSave`: To format codes before saving.
-* `goCustomFormat.fmtCms`: To configure the format commands. For example:
+* `goCustomFormat.fmtCmds`: To configure the format commands. For example:
 ```
   "goCustomFormat.onSave": true,
   "goCustomFormat.fmtCmds": [
